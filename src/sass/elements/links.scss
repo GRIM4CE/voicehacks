@@ -1,0 +1,71 @@
+%primary-link {
+  color: $secondary-light;
+  font-size: 14px;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+%primary-solid-link {
+  padding: 3px 6px;
+  background-color: $secondary-light;
+  color: $white;
+  font-size: 14px;
+
+  &:hover {
+    background-color: $secondary;
+    color: $white;
+  }
+}
+
+%secondary-link {
+  color: $white;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
+
+.list-topics {
+  min-height: 2.5rem;
+  margin: $gutter;
+}
+
+.topic-link {
+  @extend %primary-solid-link;
+}
+
+.topic-cloud {
+  li {
+    display: inline-block;
+    margin: 0 .25rem .5rem 0;
+  }
+
+  a {
+    @extend %primary-solid-link;
+  }
+}
+
+.blog-pagination {
+  text-align: center;
+
+  a {
+    @extend %primary-link;
+  }
+}
+
+.hs-rss-item {
+  margin-bottom: $gutter / 2;
+}
+
+.hs-rss-title {
+  @extend %primary-link;
+}
+
+.post-list {
+  a {
+    @extend %primary-link;
+  }
+}

@@ -1,0 +1,14 @@
+.blog-post-individual {
+  @extend %white-shadowed-container;
+  padding: $gutter * 2 $gutter * 1.5 0;
+
+  a {
+    @extend %primary-link;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .blog-post-individual {
+    padding: $gutter * 3 $gutter * 2;
+  }
+}

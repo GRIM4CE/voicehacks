@@ -1,0 +1,22 @@
+.blog-sidebar-item {
+  @extend %white-shadowed-container;
+  margin: $gutter / 2 0;
+  padding: $gutter;
+
+  h3 {
+    margin: 0 0 $gutter / 2;
+    text-transform: uppercase;
+  }
+}
+
+.blog-sidebar-item-cta {
+  @extend %white-shadowed-container;
+  margin: $gutter / 2 0;
+  padding: $gutter;
+}
+
+@media all and (min-width: 37.5rem) {
+  .blog-sidebar-item-cta {
+    padding: 0;
+  }
+}

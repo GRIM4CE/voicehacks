@@ -1,0 +1,30 @@
+.post-item {
+  @extend %white-shadowed-container;
+
+  .hs-featured-image-wrapper {
+    margin: 0 $gutter;
+  }
+
+  .featured-image {
+    width: auto;
+    min-width: 100%;
+    max-width: 150px;
+    height: 500px;
+  }
+}
+
+.post-header {
+  margin: $gutter;
+}
+
+.blog-link {
+  color: $black;
+}
+
+@media all and (min-width: 37.5rem) {
+  .post-item {
+    .hs-featured-image-wrapper {
+      margin: inherit;
+    }
+  }
+}

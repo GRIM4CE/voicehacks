@@ -1,0 +1,35 @@
+*,
+body,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: $mobile-body-background;
+}
+
+.page-center {
+  max-width: 1100px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+//Hubspot Specific
+.widget-type-raw_jinja {
+  min-height: 0 !important;
+} // Removes space from Hubl Template?
+
+@media all and (min-width: 37.5rem) {
+  body {
+    background-color: $body-background;
+  }
+}

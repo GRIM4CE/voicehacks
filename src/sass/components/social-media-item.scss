@@ -1,0 +1,12 @@
+.social-media-item {
+  .social-media-container {
+    a {
+      @extend %primary-link;
+    }
+
+    i {
+      font-size: 20px;
+      margin-right: $gutter;
+    }
+  }
+}

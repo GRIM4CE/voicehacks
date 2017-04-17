@@ -27,6 +27,16 @@
   }
 }
 
+a {
+  @extend %primary-link;
+}
+
+.header,
+.footer {
+  a {
+    @extend %secondary-link;
+  }
+}
 
 .list-topics {
   min-height: 2.5rem;
@@ -51,20 +61,6 @@
 .blog-pagination {
   text-align: center;
 
-  a {
-    @extend %primary-link;
-  }
-}
-
-.hs-rss-item {
-  margin-bottom: $gutter / 2;
-}
-
-.hs-rss-title {
-  @extend %primary-link;
-}
-
-.post-list {
   a {
     @extend %primary-link;
   }

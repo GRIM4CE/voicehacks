@@ -6,13 +6,14 @@
 @import 'elements/images';
 @import 'elements/links';
 
-@import 'components/top-header';
 @import 'components/listing-post-item';
 @import 'components/post-item';
+@import 'components/sidebar-post-widget';
 @import 'components/social-media-item';
 @import 'components/form';
 
 @import 'compositions/containers';
 @import 'compositions/blog-section';
+@import 'compositions/header';
 @import 'compositions/sidebar';
 @import 'compositions/footer';

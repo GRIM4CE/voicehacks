@@ -1,27 +1,15 @@
 .footer-section {
+  height: 150px;
   padding: $lesser-section-gutter;
   background-color: $footer-color;
-
-  .social-media-container {
-    display: flex;
-    justify-content: center;
-
-    i {
-      margin: $gutter / 2;
-      color: $white;
-      font-size: 2rem;
-
-      &:hover {
-        color: $primary;
-      }
-    }
-  }
 }
 
 .footer-navigation {
-  display: flex;
   width: 100%;
+  padding: .5rem 0 1rem;
   color: $primary;
+  font-size: 12px;
+  text-align: center;
 
   ul {
     display: inline-block;
@@ -32,14 +20,19 @@
     display: inline-block;
     padding: 0 $gutter;
   }
+}
 
-  a {
+.footer-social-media-container {
+  display: flex;
+  justify-content: center;
+
+  i {
+    margin: $gutter / 2;
     color: $white;
-    font-size: 400;
+    font-size: 2rem;
 
     &:hover {
       color: $primary;
-      text-decoration: underline;
     }
   }
 }

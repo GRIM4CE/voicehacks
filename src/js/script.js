@@ -6,6 +6,8 @@ function appInit() {
   if (document.querySelector(".mobile-hamburger-button-container")) {
     const navigation  = new Navigation ();
   }
+
+  alert(window.location.href);
 }
 
 appInit();

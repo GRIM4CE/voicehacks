@@ -1,0 +1,12 @@
+.sidebar-component {
+  h3 {
+    margin: 0 0 $gutter / 2;
+    text-transform: uppercase;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .sidebar-cta {
+    padding: 0;
+  }
+}

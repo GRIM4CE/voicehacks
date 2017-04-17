@@ -1,49 +1,3 @@
-body {
-  &[data-state="inactive"] {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-  }
-}
-
-.form-container {
-  display: flex;
-  position: fixed;
-  top: 0;
-  left: 0;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  padding: 2rem;
-  transition: .4s;
-  transition-property: opacity;
-  background-color: $white;
-  overflow: scroll;
-  z-index: 10;
-
-  .close-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-    color: $shade700;
-    font-size: 1.5rem;
-    text-decoration: none;
-    cursor: pointer;
-    z-index: 10;
-  }
-
-  &[data-state="inactive"] {
-    transform: translateX(-5000px);
-    opacity: 0;
-  }
-
-  &[data-state="active"] {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-
 .hbspt-form {
   position: relative;
   width: 100%;
@@ -136,24 +90,6 @@ body {
 }
 
 @media all and (min-width: 37.5rem) {
-  .form-container {
-    padding: 0;
-
-    .close-button {
-      top: 3rem;
-      right: 3rem;
-    }
-
-    .hbspt-form {
-      margin: 0 auto;
-    }
-  }
-
-  .hs-form {
-    max-width: 600px;
-    margin: 5rem auto;
-  }
-
   .hbspt-form {
     .submitted-message {
       font-size: 28px;

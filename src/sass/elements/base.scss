@@ -5,12 +5,13 @@ html {
 }
 
 body {
+  height: 100vh;
   margin: 0;
   background-color: $mobile-body-background;
 }
 
 .page-center {
-  max-width: 1100px;
+  max-width: 1300px;
   margin: 0 auto !important;
   float: none !important;
 }

@@ -5,32 +5,62 @@
   <meta charset="utf-8">
   <title>Voicehacks</title>
   <script src="https://use.fontawesome.com/bb321885fa.js"></script>
-  <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Raleway" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Baloo+Tamma|Raleway:300,400,700" rel="stylesheet">
   <link rel="stylesheet" href="../css/styles.css">
 </head>
 
 <body>
-  <header style="width: 100%; height: 50px" class="top-header">
+  <header class="top-header">
     <div class="page-center">
+      <div class="header-logo">
+        <img src="https://www.voicehacks.com/hs-fs/hubfs/voicehacks/logos/vh-hor-beta.png?t=1491918339263&width=300&name=vh-hor-beta.png" alt="Voicehacks">
+      </div>
       <div class="mobile-hamburger-button-container" data-state="inactive">
         <i class="fa fa-bars"></i>
       </div>
     </div>
   </header>
-  <div class="page-center">
-    <div style="width: 400px; float: right;" class="blog-sidebar">
-      <div class="blog-sidebar-item social-media-item">
-        <h3>Share This</h3>
-        <div class="social-media-container">
-          <a href="http://www.facebook.com/share.php?u={{ social_link_url }}"><i class="fa fa-facebook"></i></a>
-          <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ social_link_url }}"><i class="fa fa-linkedin"></i></a>
-          <a href="https://twitter.com/intent/tweet?original_referer={{ social_link_url }}&url={{ social_link_url }}&source=tweetbutton&text={{ social_page_title }}"><i class="fa fa-twitter"></i></a>
-          <a href="https://plus.google.com/share?url={{ social_link_url }}"><i class="fa fa-google-plus"></i></a>
-          <a href="mailto:?subject=Check out {{ social_link_url }} &body=Check out {{ social_link_url }}"><i class="fa fa-envelope"></i></a>
+
+  <div class="body-container">
+    <div class="section-container">
+      <div class="page-center">
+        <div style="width: 400px; margin-left: auto;" class="blog-sidebar">
+          <div class="blog-sidebar-item social-media-item">
+            <h3>Share This</h3>
+            <div class="social-media-container">
+              <a href="http://www.facebook.com/share.php?u={{ social_link_url }}"><i class="fa fa-facebook"></i></a>
+              <a href="http://www.linkedin.com/shareArticle?mini=true&url={{ social_link_url }}"><i class="fa fa-linkedin"></i></a>
+              <a href="https://twitter.com/intent/tweet?original_referer={{ social_link_url }}&url={{ social_link_url }}&source=tweetbutton&text={{ social_page_title }}"><i class="fa fa-twitter"></i></a>
+              <a href="https://plus.google.com/share?url={{ social_link_url }}"><i class="fa fa-google-plus"></i></a>
+              <a href="mailto:?subject=Check out {{ social_link_url }} &body=Check out {{ social_link_url }}"><i class="fa fa-envelope"></i></a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
+
+  <footer class="footer-section">
+    <nav class="footer-navigation">
+      <ul>
+        <a><li>About Voicehacks</li></a>
+        <a><li>Subcribe</li></a>
+        <a><li>Contact</li></a>
+        <a><li>Code of Conduct</li></a>
+        <a><li>Privacy Policy</li></a>
+      </ul>
+    </nav>
+    <div class="social-media-container">
+      <a href="https://twitter.com/GoModev" target="_blank">
+        <i class="fa fa-twitter-square"></i>
+      </a>
+      <a href="http://www.facebook.com/pages/Modev/203072863125871" target="_blank">
+        <i class="fa fa-facebook-square"></i>
+      </a>
+    </div>
+    <div class="copyright">© {{ year }} <a href="http://www.modev.com/">Modev.com</a></div>
+  </footer>
+
   <script type="text/javascript" src="../js/bundle.js"></script>
 </body>
 

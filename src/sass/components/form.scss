@@ -1,25 +1,23 @@
+.form-container {
+  .form-title {
+    margin-bottom: 1rem;
+  }
+}
+
 .hbspt-form {
   position: relative;
   width: 100%;
-
-  .submitted-message {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    max-width: 100%;
-    transform: translate(-50%, -40%);
-    color: $shade700;
-    font-size: 20px;
-    line-height: 1.4;
-    text-align: center;
-  }
 }
 
 .hs-form {
   .hs-form-field {
-    padding-bottom: 1.5rem;
+    margin-top: 1.5rem;
     color: $shade700;
     font-family: $base-font;
+
+    &:first-child {
+      margin-top: 0;
+    }
   }
 
   fieldset {
@@ -33,13 +31,16 @@
 
   .hs-input {
     width: 100% !important;
-    height: 40px;
+    height: 32px;
     margin-top: .25rem;
-    padding: 0 $gutter;
-    border: 1px solid $shade400;
-    border-radius: 5px;
+    padding: 0 $gutter / 2;
+    border: .5px solid $secondary-light;
     font-family: $base-font;
     font-size: 16px;
+
+    &.error {
+      border-color: $emergency-light;
+    }
   }
 
   textarea {
@@ -47,10 +48,9 @@
   }
 
   .hs-error-msgs {
-    padding-top: .75rem;
-    color: $emergency;
+    padding-top: .5rem;
+    color: $emergency-light;
     font-size: 14px;
-    font-weight: 200;
   }
 }
 
@@ -73,19 +73,19 @@
 
 .hs-button {
   width: 100%;
-  padding: .5em .8em;
+  height: 40px;
+  margin-top: 1.5rem;
   border: 0;
-  border-radius: 5px !important;
   background: $secondary !important;
   color: $white !important;
-  font-size: 22px !important;
+  font-size: 18px !important;
   text-shadow: 1px 1px 0 rgba($black, .05);
   box-shadow: 0 2px 4px rgba($black, .1);
   cursor: pointer;
   appearance: none !important;
 
   &:hover {
-    background: $secondary;
+    background: $secondary-dark !important;
   }
 }
 

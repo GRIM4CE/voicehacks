@@ -39,6 +39,16 @@
     margin: $gutter $gutter * 2;
   }
 
+  .main-container {
+    &.float-container {
+      padding: 2rem;
+
+      h1 {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
   .section-container {
     padding: 5rem $gutter * 3;
 

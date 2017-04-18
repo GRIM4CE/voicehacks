@@ -60,8 +60,4 @@ a {
 
 .blog-pagination {
   text-align: center;
-
-  a {
-    @extend %primary-link;
-  }
 }

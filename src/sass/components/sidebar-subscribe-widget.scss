@@ -1,0 +1,9 @@
+.sidebar-subscribe {
+  .hs-form-required {
+    display: none;
+  }
+
+  .hs-button {
+    @extend %button;
+  }
+}

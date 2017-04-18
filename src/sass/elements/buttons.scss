@@ -1,0 +1,28 @@
+%general-button {
+  border: 0;
+  background: $secondary !important;
+  color: $white !important;
+  font-size: 18px !important;
+  text-shadow: 1px 1px 0 rgba($black, .05);
+  cursor: pointer;
+  appearance: none !important;
+
+  &:hover {
+    background: $secondary-dark !important;
+  }
+}
+
+%button {
+  @extend %general-button;
+  display: block;
+  width: 150px;
+  height: 30px;
+  margin: .75rem auto 0;
+}
+
+%button-large-full {
+  @extend %general-button;
+  width: 100%;
+  height: 40px;
+  margin-top: 1.5rem;
+}

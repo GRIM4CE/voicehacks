@@ -12,7 +12,7 @@ $emergency-dark: #820808;
 
 $black: #11110a;
 $white: #fff;
-$light-gray: #f3f2ee;
+$white-off: #f3f2ee;
 
 $shade700: #232728;
 $shade500: #353a3a;
@@ -21,9 +21,11 @@ $shade200: #b1b2b2;
 
 $hue700: #062128;
 $hue500: #0f323a;
+$hue300: #25494f;
+$hue200: #446c72;
 
 $body-color: $black;
 $mobile-body-background: $white;
-$body-background: $light-gray;
-$header-color: $secondary;
-$footer-color: $secondary-dark;
+$body-background: $white-off;
+$header-color: $hue500;
+$footer-color: $hue700;

@@ -21,12 +21,27 @@
 }
 
 .lesser-section-container {
-  padding: 1rem;
+  padding: .5rem;
 }
 
 .float-container {
   @extend %white-shadowed-container;
   padding: $gutter;
+}
+
+.dark-background {
+  background-color: $hue700;
+  color: $white;
+}
+
+.medium-background {
+  background-color: $hue500;
+  color: $white;
+}
+
+.light-background {
+  background-color: $hue200;
+  color: $white;
 }
 
 @media all and (min-width: 37.5rem) {
@@ -56,9 +71,5 @@
       margin-bottom: 1.5rem;
       padding-bottom: .5rem;
     }
-  }
-
-  .lesser-section-container {
-    padding: 1.5rem;
   }
 }

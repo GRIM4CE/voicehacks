@@ -1,0 +1,44 @@
+.tour-registration {
+  padding: 2rem;
+  background-color: rgba($hue500, .5);
+
+  .hs-form {
+    label {
+      display: none;
+    }
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .tour-registration {
+    position: absolute;
+    bottom: 0;
+
+    .input,
+    .hs-button {
+      margin: 0 .5rem;
+    }
+
+    .hs-form-field,
+    .hs_submit {
+      display: inline-block;
+      width: 16.66%;
+    }
+
+    .hs-form {
+      .hs-form-field {
+        margin-top: 0;
+      }
+
+      .hs-input,
+      .hs-button {
+        height: 35px;
+        margin-top: 0;
+      }
+
+      .hs-error-msgs {
+        display: none;
+      }
+    }
+  }
+}

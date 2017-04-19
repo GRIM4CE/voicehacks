@@ -11,10 +11,16 @@
 @import 'components/blog-post-listing';
 @import 'components/sidebar-post-list-widget';
 @import 'components/sidebar-subscribe-widget';
+@import 'components/speaker';
 @import 'components/form';
 
 @import 'compositions/containers';
 @import 'compositions/blog-section';
 @import 'compositions/header';
+@import 'compositions/hero';
 @import 'compositions/sidebar';
+@import 'compositions/tour-registration-form';
+@import 'compositions/sponsors';
 @import 'compositions/footer';
+
+@import 'pages/launch';

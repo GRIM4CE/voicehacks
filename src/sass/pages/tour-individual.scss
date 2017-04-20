@@ -1,0 +1,41 @@
+.tour-individual-page {
+  .hero {
+    min-height: 100vh !important;
+
+    h1 {
+      margin-bottom: .5rem;
+      font-size: 56px;
+    }
+  }
+
+  .hero-content {
+    padding: 2rem 1rem 0;
+  }
+
+  .hero-opacity {
+    min-height: 100vh;
+    background-color: rgba($black, .6);
+  }
+
+  .logo {
+    img {
+      max-width: 175px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .tour-individual-page {
+    .hero {
+      h1 {
+        font-size: 72px;
+      }
+    }
+
+    .hero-content {
+      padding: 20vh 0 0;
+    }
+  }
+}

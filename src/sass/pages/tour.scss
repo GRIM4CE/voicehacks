@@ -11,7 +11,8 @@
     margin: 3rem 1rem 0;
 
     h1 {
-      font-size: 72px;
+      margin-bottom: .5rem;
+      font-size: 56px;
     }
 
     h2,
@@ -25,6 +26,8 @@
 
     img {
       max-width: 175px;
+      margin-top: 1rem;
+      margin-bottom: 1rem;
     }
   }
 
@@ -35,11 +38,18 @@
   }
 }
 
+.tour-sponsors-container {
+  display: none !important;
+}
+
 .tour-sponsors {
-  display: none;
+  display: inline-flex;
   align-items: center;
+  justify-content: center;
+  min-width: 600px;
   height: 90px;
   margin: 2rem auto 0 !important;
+  padding: 0 3rem;
   border-top: 2px solid $secondary-light;
   border-bottom: 2px solid $secondary-light;
 
@@ -101,6 +111,11 @@
   .hero-tour-content {
     .third-container {
       width: 45%;
+
+      h1 {
+        margin-bottom: .5rem;
+        font-size: 72px;
+      }
     }
 
     .two-third-container {
@@ -108,9 +123,8 @@
     }
   }
 
-  .tour-sponsors {
-    display: flex;
-    justify-content: center;
+  .tour-sponsors-container {
+    display: block !important;
   }
 
   .tour-registration {

@@ -1,12 +1,45 @@
-.two-third-container {
-  display: none;
+// HERO
+.hero-tour-content {
+  display: flex;
+
+  .third-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 1rem 0;
+
+    h1 {
+      font-size: 72px;
+    }
+
+    h2,
+    h3 {
+      width: 100%;
+    }
+  }
+
+  .logo {
+    width: 80%;
+
+    img {
+      max-width: 175px;
+    }
+  }
+
+  .two-third-container {
+    display: none;
+    width: 55%;
+    margin: 3rem 1rem 0;
+  }
 }
 
 .tour-sponsors {
-  display: flex;
+  display: none;
   align-items: center;
   height: 90px;
-  margin: 2rem auto !important;
+  margin: 2rem auto 0 !important;
   border-top: 2px solid $secondary-light;
   border-bottom: 2px solid $secondary-light;
 
@@ -23,6 +56,7 @@
 
 .tour-registration {
   padding: 2rem;
+  padding-top: 0;
 
   h3 {
     margin-bottom: 1.5rem;
@@ -35,31 +69,56 @@
   }
 }
 
+// LOCATION SECTION
+.location-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .location-tab {
+    width: 100%;
+    margin-bottom: .5rem;
+    padding: 1rem;
+    border-bottom: 3px solid $secondary;
+    background-color: $secondary-light;
+    color: $white;
+    text-align: center;
+
+    .location-text {
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .location-date {
+      font-weight: 400;
+      text-transform: initial;
+    }
+  }
+}
+
 @media all and (min-width: 37.5rem) {
   .hero-tour-content {
-    display: flex;
-
     .third-container {
-      display: flex;
-      align-items: center;
-      width: 33%;
-
-      .logo {
-        width: 100%;
-      }
+      width: 45%;
     }
 
     .two-third-container {
       display: block;
-      width: 66%;
-      margin-top: 5rem;
     }
   }
 
+  .tour-sponsors {
+    display: flex;
+    justify-content: center;
+  }
+
   .tour-registration {
-    .input,
-    .hs-button {
-      margin: 0 .5rem;
+    padding-top: 2rem;
+
+    .hs-button,
+    .input {
+      margin: 0 1rem 0 0;
     }
 
     .hs-form-field,
@@ -73,14 +132,30 @@
         margin-top: 0;
       }
 
-      .hs-input,
-      .hs-button {
+      .hs-button,
+      .hs-input {
         height: 35px;
         margin-top: 0;
       }
 
       .hs-error-msgs {
         display: none;
+      }
+    }
+  }
+
+  // LOCATION SECTION
+  .location-container {
+    .location-tab {
+      flex-basis: 45%;
+      margin: 0 1rem 1rem;
+      transition: .4s;
+      transition-property: background-color;
+      background-color: transparent;
+      color: $white;
+
+      &:hover {
+        background-color: $secondary-light;
       }
     }
   }

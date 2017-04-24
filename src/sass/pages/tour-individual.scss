@@ -4,6 +4,16 @@
     font-weight: 300;
   }
 
+  h3 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
   .hero {
     min-height: 100vh !important;
 
@@ -27,6 +37,18 @@
       max-width: 175px;
       margin-top: 1rem;
       margin-bottom: 1rem;
+    }
+  }
+
+  .schedule {
+    h2 {
+      margin-bottom: .5rem;
+      padding: 1rem;
+      border-bottom: 3px solid $secondary;
+    }
+
+    h3 {
+      padding: .5rem 1rem;
     }
   }
 }

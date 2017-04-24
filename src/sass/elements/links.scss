@@ -1,13 +1,12 @@
 %primary-link {
-  color: $secondary-light;
-  font-size: 14px;
+  color: $primary;
 
   &:hover {
-    color: $secondary;
+    color: $primary-dark;
   }
 }
 
-%primary-solid-link {
+%secondary-solid-link {
   padding: 3px 6px;
   background-color: $secondary-light;
   color: $white;
@@ -44,7 +43,7 @@ a {
 }
 
 .topic-link {
-  @extend %primary-solid-link;
+  @extend %secondary-solid-link;
 }
 
 .topic-cloud {
@@ -54,7 +53,7 @@ a {
   }
 
   a {
-    @extend %primary-solid-link;
+    @extend %secondary-solid-link;
   }
 }
 

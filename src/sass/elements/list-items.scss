@@ -1,0 +1,15 @@
+.list-items-container {
+  margin: .5rem 0 1rem;
+  padding-left: 1rem;
+
+  li {
+    margin-bottom: .5rem;
+    font-size: 18px;
+    line-height: 1.4;
+    list-style: disc;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

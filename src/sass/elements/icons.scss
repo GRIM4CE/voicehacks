@@ -1,6 +1,13 @@
-.header-icon {
+.header-icon-container {
   display: block;
-  margin-bottom: 1rem;
-  font-size: 48px;
   text-align: center;
+}
+
+.header-icon {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: 100%;
+  background-color: $white;
+  color: $primary;
+  font-size: 56px;
 }

@@ -14,10 +14,6 @@
     margin-top: 1.5rem;
     color: $shade700;
     font-family: $base-font;
-
-    &:first-child {
-      margin-top: 0;
-    }
   }
 
   fieldset {
@@ -75,10 +71,17 @@
   @extend %button-large-full;
 }
 
-@media all and (min-width: 37.5rem) {
-  .hbspt-form {
-    .submitted-message {
-      font-size: 28px;
+.hue-background,
+.dark-background,
+.medium-background,
+.light-background {
+  
+}
+
+  @media all and (min-width: 37.5rem) {
+    .hbspt-form {
+      .submitted-message {
+        font-size: 28px;
+      }
     }
   }
-}

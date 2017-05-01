@@ -39,6 +39,10 @@
     }
   }
 
+  .hs-input[type='checkbox'] {
+    width: auto !important;
+  }
+
   textarea {
     height: 75px !important;
   }

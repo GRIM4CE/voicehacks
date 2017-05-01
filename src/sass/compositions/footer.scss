@@ -1,6 +1,5 @@
 .footer {
-  height: 150px;
-  padding: $lesser-section-gutter;
+  padding: $gutter;
   background-color: $footer-color;
 }
 
@@ -41,4 +40,10 @@
   margin: $gutter / 2;
   color: $white;
   text-align: center;
+}
+
+@media all and (min-width: 37.5rem) {
+  .footer {
+    height: 175px;
+  }
 }

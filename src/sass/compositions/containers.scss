@@ -6,10 +6,6 @@
   margin: $gutter 0;
 }
 
-.body-container-wrapper {
-  min-height: calc(100% - 230px);
-}
-
 .section-container {
   padding: 2rem $gutter * 2;
 }
@@ -69,6 +65,10 @@
 
   .body-container {
     margin: $gutter $gutter * 2;
+  }
+
+  .body-container-wrapper {
+    min-height: calc(100% - 255px);
   }
 
   .main-container {

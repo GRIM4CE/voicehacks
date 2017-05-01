@@ -6,6 +6,22 @@
   }
 }
 
+%secondary-link {
+  color: $secondary-light;
+
+  &:hover {
+    color: $secondary;
+  }
+}
+
+%white-link {
+  color: $white;
+
+  &:hover {
+    color: $primary-light;
+  }
+}
+
 %secondary-solid-link {
   padding: 3px 6px;
   background-color: $secondary-light;
@@ -18,20 +34,18 @@
   }
 }
 
-%secondary-link {
-  color: $white;
-
-  &:hover {
-    color: $primary-light;
-  }
-}
-
 a {
   @extend %primary-link;
 }
 
 .header,
 .footer {
+  a {
+    @extend %white-link;
+  }
+}
+
+.sidebar {
   a {
     @extend %secondary-link;
   }

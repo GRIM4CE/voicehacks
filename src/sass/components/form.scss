@@ -71,17 +71,27 @@
   @extend %button-large-full;
 }
 
-.hue-background,
 .dark-background,
-.medium-background,
-.light-background {
-  
-}
-
-  @media all and (min-width: 37.5rem) {
-    .hbspt-form {
-      .submitted-message {
-        font-size: 28px;
-      }
+.hue-background,
+.light-background,
+.medium-background {
+  .hs-form {
+    label {
+      color: $white;
     }
   }
+}
+
+@media all and (min-width: 37.5rem) {
+  .hbspt-form {
+    .submitted-message {
+      font-size: 28px;
+    }
+  }
+
+  .form-columns-3 {
+    .hs-form-field {
+      width: 33.333% !important;
+    }
+  }
+}

@@ -60,11 +60,10 @@
 }
 
 .tour-sponsors {
-  display: inline-flex;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  min-width: 700px;
-  height: 90px;
   margin: 2rem auto 0 !important;
   padding: 0 3rem;
   border-top: 2px solid $secondary-light;
@@ -144,6 +143,14 @@
     display: block !important;
   }
 
+  .tour-sponsors {
+    padding: 1rem 0;
+
+    img {
+      margin: .5rem;
+    }
+  }
+
   .tour-registration {
     padding-top: 2rem;
 
@@ -189,5 +196,12 @@
         background-color: $secondary-light;
       }
     }
+  }
+}
+
+@media all and (min-width: 68.75rem) {
+  .tour-sponsors {
+    width: 90%;
+    height: 90px;
   }
 }

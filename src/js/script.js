@@ -1,5 +1,6 @@
 'use strict';
 import Navigation from './components/navigation';
+import Speaker from './components/speaker';
 
 function appInit() {
   // Init Mobile Nav
@@ -7,8 +8,8 @@ function appInit() {
     const navigation  = new Navigation ();
   }
 
-    // Create Speakers
-  if (document.querySelector('.speaker-container')) {
+  // Create Speakers
+  if (document.querySelectorAll('.speaker-container')) {
     const speakerContainers = document.querySelectorAll('.speaker-container');
     for (let i = 0; i < speakerContainers.length; i++) {
       if (speakerContainers[i].querySelector('.speaker-description') !== null) {

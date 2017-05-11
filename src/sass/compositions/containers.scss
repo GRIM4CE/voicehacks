@@ -52,6 +52,18 @@
   color: $white;
 }
 
+.image-background {
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+  color: $white;
+}
+
+.image-background-opacity {
+  background-color: rgba($black, .6);
+}
+
 .hue-background {
   background-color: $primary-light;
   color: $white;

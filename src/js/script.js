@@ -1,11 +1,12 @@
 'use strict';
 import Navigation from './components/navigation';
 import Speaker from './components/speaker';
+import Modal from './components/modal';
 
 function appInit() {
   // Init Mobile Nav
   if (document.querySelector(".mobile-hamburger-button-container")) {
-    const navigation  = new Navigation ();
+    const navigation = new Navigation();
   }
 
   // Create Speakers
@@ -16,6 +17,11 @@ function appInit() {
         new Speaker(speakerContainers[i]);
       }
     }
+  }
+
+  // Create Modal Form
+  if (document.querySelector(".form-container")) {
+    const modal = new Modal();
   }
 }
 

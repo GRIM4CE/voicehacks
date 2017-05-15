@@ -1,9 +1,11 @@
 .lead-in {
+  display: flex;
   position: fixed;
   right: 0;
   bottom: 0;
+  flex-wrap: wrap;
   width: 400px;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: .8s transform;
   background-color: $primary;
   color: $white;
@@ -17,9 +19,26 @@
   }
 
   .close-lead-in-button {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+    margin-bottom: .5rem;
+    margin-left: auto;
     cursor: pointer;
+  }
+
+  .hs-form {
+    .hs-form-field {
+      margin-top: .5rem;
+    }
+
+    .hs-button {
+      margin-top: 1rem;
+    }
+
+    .hs-form-required {
+      display: none;
+    }
+
+    .hs-error-msgs {
+      color: $white;
+    }
   }
 }

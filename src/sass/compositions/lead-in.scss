@@ -4,21 +4,22 @@
   bottom: 0;
   width: 400px;
   padding: 2rem;
+  transition: .8s transform;
   background-color: $primary;
   color: $white;
+
+  &[data-state="inactive"] {
+    transform: translateX(400px);
+  }
+
+  &[data-state="active"] {
+    transform: translateX(0);
+  }
 
   .close-lead-in-button {
     position: absolute;
     top: 1rem;
     right: 1rem;
     cursor: pointer;
-  }
-
-  &[data-state="inactive"] {
-    display: none;
-  }
-
-  &[data-state="active"] {
-    display: block;
   }
 }

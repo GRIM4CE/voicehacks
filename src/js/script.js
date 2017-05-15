@@ -2,6 +2,7 @@
 import Navigation from './components/navigation';
 import Speaker from './components/speaker';
 import Modal from './components/modal';
+import LeadIn from './components/lead-in';
 
 function appInit() {
   // Init Mobile Nav
@@ -19,7 +20,12 @@ function appInit() {
     }
   }
 
-  // Create Modal Form
+  // Create Modal
+  if (document.querySelector(".form-container")) {
+    const modal = new Modal();
+  }
+
+  // Create Lead-in
   if (document.querySelector(".form-container")) {
     const modal = new Modal();
   }

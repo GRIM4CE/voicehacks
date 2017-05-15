@@ -1,3 +1,5 @@
+'use strict';
+
 class Speaker {
   constructor(speakerContainer) {
     this.speakerContainer = speakerContainer;

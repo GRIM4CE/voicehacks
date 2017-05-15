@@ -7,13 +7,18 @@ class LeadIn {
     this.bindButtons();
   }
 
+  activateLeadIn() {
+    this.leadInContainer.setAttribute('data-state', 'active');
+  }
+
   deactivateLeadIn() {
     this.leadInContainer.setAttribute('data-state', 'inactive');
   }
 
   bindButtons() {
+    setTimeout(this.activateLeadIn.bind(this), 5000);
     this.closeButton.addEventListener('click', this.deactivateLeadIn.bind(this));
-    }
   }
+}
 
-  export default LeadIn;
+export default LeadIn;

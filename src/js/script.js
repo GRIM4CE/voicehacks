@@ -26,8 +26,8 @@ function appInit() {
   }
 
   // Create Lead-in
-  if (document.querySelector(".form-container")) {
-    const modal = new Modal();
+  if (document.querySelector(".lead-in")) {
+    const leadIn = new LeadIn();
   }
 }
 

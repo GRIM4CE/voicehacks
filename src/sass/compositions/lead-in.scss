@@ -1,0 +1,24 @@
+.lead-in {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  padding: 2rem;
+  background-color: $primary;
+  color: $white;
+
+  .close-lead-in-button {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    cursor: pointer;
+  }
+
+  &[data-state="inactive"] {
+    display: none;
+  }
+
+  &[data-state="active"] {
+    display: block;
+  }
+}

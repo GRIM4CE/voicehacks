@@ -4,8 +4,8 @@
   right: 0;
   bottom: 0;
   flex-wrap: wrap;
-  width: 500px;
-  padding: 1.5rem;
+  width: 100%;
+  padding: 1rem;
   transition: .8s transform;
   background-color: $primary;
   color: $white;
@@ -18,9 +18,15 @@
     transform: translateX(0);
   }
 
+  h3 {
+    width: 100%;
+    padding-right: 2rem;
+  }
+
   .close-lead-in-button {
-    margin-bottom: .5rem;
-    margin-left: auto;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
     cursor: pointer;
   }
 
@@ -48,5 +54,27 @@
       font-size: 18px;
       text-align: center;
     }
+  }
+}
+
+
+@media all and (min-width: 37.5rem) {
+  .lead-in {
+    width: 500px;
+    padding: 1.5rem;
+  }
+
+  h3 {
+    width: auto;
+    padding-right: 0;
+  }
+
+  .close-lead-in-button {
+    position: relative;
+    top: inherit;
+    right: inherit;
+    margin-bottom: .5rem;
+    margin-left: auto;
+    cursor: pointer;
   }
 }

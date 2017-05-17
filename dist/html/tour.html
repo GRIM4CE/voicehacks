@@ -105,7 +105,9 @@
         portalId: '482737',
         formId: '29dd294f-2e0b-4e58-be51-b798df579b4a',
         onFormSubmit: function($form) {
-          document.querySelector('.lead-in').setAttribute('data-state', 'inactive');
+          setTimeout(function () {
+            document.querySelector('.lead-in').setAttribute('data-state', 'inactive');
+          }, 2000);
         }
       });
     </script>

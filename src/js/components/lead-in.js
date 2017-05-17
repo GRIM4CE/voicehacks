@@ -1,4 +1,5 @@
 'use strict';
+import Subscribe from './lead-in/subscribe';
 
 class LeadIn {
   constructor() {
@@ -9,6 +10,10 @@ class LeadIn {
 
   activateLeadIn() {
     this.leadInContainer.setAttribute('data-state', 'active');
+    if (this.leadInContainer.querySelector('.hbspt-form')) {
+      let form = this.leadInContainer.querySelector('.hbspt-form')
+      const subscribe = new Subscribe(form);
+    }
   }
 
   deactivateLeadIn() {
@@ -16,7 +21,7 @@ class LeadIn {
   }
 
   bindButtons() {
-    setTimeout(this.activateLeadIn.bind(this), 5000);
+    setTimeout(this.activateLeadIn.bind(this), 500);
     this.closeButton.addEventListener('click', this.deactivateLeadIn.bind(this));
   }
 }

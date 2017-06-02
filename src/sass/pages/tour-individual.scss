@@ -50,6 +50,37 @@
   }
 }
 
+.workshop-resource-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 1.5rem;
+}
+
+.workshop-resource {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  width: 200px;
+  padding: 1rem;
+
+  img {
+    width: 100%;
+    max-width: 125px;
+  }
+
+  h3 {
+    color: $white;
+  }
+
+  &:hover {
+    h3 {
+      text-decoration: underline;
+    }
+  }
+}
+
 @media all and (min-width: 37.5rem) {
   .tour-individual-page {
     .hero {

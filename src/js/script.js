@@ -1,3 +1,4 @@
+/* @flow */
 'use strict';
 import Navigation from './components/navigation';
 import Speaker from './components/speaker';

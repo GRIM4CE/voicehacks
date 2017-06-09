@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "typecheck": "flow check src/js",
     "css": "postcss -u autoprefixer -r dist/css/*.css",
     "sass": "node-sass --output-style compressed src/sass/styles.scss dist/css/styles.css && npm run css",
     "sass:w": "nodemon -e scss -x \"npm run sass\"",
@@ -12,8 +13,7 @@
   },
   "babel": {
     "presets": [
-      "babel-preset-env",
-      "flow"
+      "babel-preset-env"
     ]
   },
   "author": "Jon Leibham (bhamdesigns.com)",
@@ -23,7 +23,6 @@
     "babel-core": "^6.22.1",
     "babel-loader": "^6.2.10",
     "babel-preset-env": "^1.1.8",
-    "babel-preset-flow": "^6.23.0",
     "concurrently": "^2.2.0",
     "flow-bin": "^0.47.0",
     "lodash": "^4.17.4",

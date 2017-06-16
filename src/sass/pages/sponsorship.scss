@@ -1,0 +1,30 @@
+.sponsorship-img-container {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin: 1rem 0;
+
+  img {
+    display: inline-block;
+    width: 100%;
+
+    &:first-child,
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+
+@media all and (min-width: 37.5rem) {
+  .sponsorship-img-container {
+    img {
+      width: 32%;
+
+      &:first-child,
+      &:last-child {
+        display: inline-block;
+      }
+    }
+  }
+}

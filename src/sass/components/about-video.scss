@@ -1,0 +1,13 @@
+.about-video {
+  display: none;
+}
+
+@media all and (min-width: 37.5rem) {
+  .about-video {
+    display: block;
+    width: 100%;
+    max-width: 550px;
+    height: 300px;
+    margin-top: 3rem;
+  }
+}

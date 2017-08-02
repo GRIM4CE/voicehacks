@@ -1,0 +1,42 @@
+.home-page {
+  .hero {
+    background-position: 20% center;
+  }
+
+  .hero-opacity {
+    padding: 5rem 3rem;
+    background-color: rgba($black, .4);
+  }
+
+  .hs-rss-item {
+    display: flex;
+  }
+
+  .hs-with-featured-image {
+    .hs-rss-item-text {
+      order: 2;
+      padding-right: 0;
+      padding-left: 20px;
+    }
+
+    .hs-rss-item-image-wrapper {
+      order: 1;
+    }
+  }
+
+  .hero-button {
+    @extend %button-large;
+  }
+}
+
+@media all and (min-width: 37.5rem) {
+  .home-page {
+    .hero {
+      background-position: center center;
+    }
+
+    .hero-opacity {
+      padding: 7rem 3rem;
+    }
+  }
+}

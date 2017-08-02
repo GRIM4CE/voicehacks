@@ -62,39 +62,39 @@
 
 @media all and (min-width: 37.5rem) {
   .header {
-    height: 80px;
-  }
+    > div > div {
+      display: flex;
+      align-items: center;
+      max-width: 980px;
+      margin: 0 auto;
+    }
 
-  .header-wrapper {
-    position: relative;
+    .widget-type-raw_jinja {
+      display: none;
+    }
   }
 
   .header-navigation {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    left: inherit;
-    width: 50%;
+    position: relative;
+    top: initial;
+    left: initial;
+    flex: 1;
     min-width: inherit;
+    margin-left: auto;
     padding: 0;
-    transform: translateY(-50%);
-    transition: transform 0;
+    transform: none;
+    transition: none;
     border-top: 0;
     background-color: transparent;
 
+    &[data-state='inactive'],
+    &[data-state='active'] {
+      transform: none;
+    }
+
     > div {
-      float: right !important;
-    }
-
-    &[data-state='active'],
-    &[data-state='inactive'] {
-      transform: translateY(-50%);
-    }
-
-    ul {
-      margin: 0;
-      padding: 0;
-      float: right;
+      width: 100% !important;
+      text-align: right;
     }
 
     .hs-menu-item {

@@ -22,7 +22,9 @@
 
 %button-large {
   @extend %general-button;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 100%;
   max-width: 400px;
   height: 50px;

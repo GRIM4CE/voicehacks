@@ -9,25 +9,20 @@
 @import 'elements/icons';
 @import 'elements/images';
 
-@import 'components/blog-post-individual';
-@import 'components/blog-post-listing';
-@import 'components/sidebar-post-list-widget';
-@import 'components/sidebar-subscribe-widget';
 @import 'components/about-video';
 @import 'components/speaker';
 @import 'components/form';
 
-@import 'compositions/containers';
-@import 'compositions/blog-section';
 @import 'compositions/header';
 @import 'compositions/hero';
-@import 'compositions/sidebar';
 @import 'compositions/sponsors-partners';
 @import 'compositions/footer';
 @import 'compositions/pop-up';
 @import 'compositions/lead-in';
 
-@import 'pages/launch';
+@import 'layouts/containers';
+
+@import 'pages/home';
 @import 'pages/sponsorship';
 @import 'pages/tour';
 @import 'pages/tour-individual';
